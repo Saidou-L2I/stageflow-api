@@ -212,11 +212,12 @@ app\utils\time.py                          6      0   100%
 TOTAL                                    579     46    92%
 ================================================================== 43 passed in 32.11s ==================================================================
 
-#Figure X : Interface Docker Desktop utilisée pour la gestion et 
-#l'administration des conteneurs du projet StageFlow. Cette interface 
-#permet de superviser les services conteneurisés 
-#et de contrôler leur exécution.
-#1
-![img.png](img.png)
-#2
-![img_1.png](img_1.png)
+## Docker
+
+**Figure 1 :** Interface Docker Desktop utilisée pour la gestion et l'administration des conteneurs du projet StageFlow.
+
+![Interface Docker Desktop](img.png)
+
+**Figure 2 :** Vue des conteneurs du projet StageFlow dans Docker Desktop.
+
+![Conteneurs Docker](img_1.png)
