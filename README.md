@@ -212,16 +212,12 @@ app\utils\time.py                          6      0   100%
 TOTAL                                    579     46    92%
 ================================================================== 43 passed in 32.11s ==================================================================
 
-<h2>Docker</h2>
+## Docker
 
-<p align="center">
-  <img src="img.png" width="900">
-  <br>
-  <em>Figure 1 : Interface Docker Desktop utilisée pour la gestion et l'administration des conteneurs du projet StageFlow.</em>
-</p>
+### Interface Docker Desktop
 
-<p align="center">
-  <img src="img_1.png" width="900">
-  <br>
-  <em>Figure 2 : Vue des conteneurs du projet StageFlow dans Docker Desktop.</em>
-</p>
+![Interface Docker Desktop](./img.png)
+
+### Conteneurs du projet StageFlow
+
+![Conteneurs Docker](./img_1.png)
