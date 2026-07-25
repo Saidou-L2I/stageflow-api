@@ -1,0 +1,19 @@
+fastapi[standard]==0.136.1
+SQLAlchemy==2.0.51
+alembic==1.18.4
+asyncpg==0.31.0
+pydantic==2.13.4
+python-jose[cryptography]==3.5.0
+passlib==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.32
+#dependence Testing
+pytest==9.1.1
+pytest-asyncio==1.4.0
+httpx==0.28.1
+pytest-cov==7.1.0
+factory-boy==3.3.3
+faker==40.31.0
+# Requis pour faire tourner les tests sur SQLite en mode async (voir consigne :
+# "SQLite autorise uniquement pour certains tests")
+aiosqlite==0.21.0

@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: stageflow
+      POSTGRES_PASSWORD: stageflow
+      POSTGRES_DB: stageflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - stageflow_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stageflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://stageflow:stageflow@db:5432/stageflow
+      SECRET_KEY: dev-secret-key-change-me
+      DEBUG: "true"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+
+volumes:
+  stageflow_db_data:
