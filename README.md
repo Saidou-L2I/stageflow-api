@@ -17,6 +17,7 @@ encadrants — chaque rôle ne voyant et ne modifiant que ce qu'il doit.
 - [Lancement des tests](#lancement-des-tests)
 - [Documentation OpenAPI](#documentation-openapi)
 - [Endpoints principaux](#endpoints-principaux)
+- [Résultats des tests](#resultats-des-tests-pytest--covapp--cov-reportterm-missing)
 
 ## Architecture
 
